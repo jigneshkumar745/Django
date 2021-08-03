@@ -1,0 +1,22 @@
+.card {
+    background-color: black;
+    margin: 20px;
+}
+
+button {
+    background-color: white;
+    border: none;
+    border-radius: 18px;
+    padding: 10px;
+    font-size: 17px;
+}
+
+.coursename {
+    font-size: 40px;
+    font-weight: 700;
+    color: white;
+}
+
+.enroll:hover {
+    box-shadow: 3px 3px 12px 5px rgb(158, 157, 157);
+}

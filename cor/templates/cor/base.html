@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="{%static 'cor/css/all.min.css'%}">
+  <link rel="stylesheet" href="{%static 'cor/css/bootstrap.css'%}">
+ <link rel="stylesheet" href="{%static 'cor/css/Home.css'%}">
+  
+ {% block home%}
+<link rel="stylesheet" href="{%static 'cor/css/h1.css'%}">
+{% endblock home%}
+
+  <title>SOLID LEARNING</title>
+</head>
+
+<body>
+  <nav  class="navbar navbar-expand-lg navbar-dark fixed-top">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="/"><img width="60px" height="60px" style="margin-bottom: 5px;" src="{% static 'cor/img/logo.png'%}" alt=""></a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="/">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" href="/course/">Courses</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" href="{% url 'Intern'%}">Internship</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" href="{% url 'Cont'%}">Contactus</a>
+          </li>
+          
+          <li class="nav-item">
+            <a class="nav-link active" href="{% url 'sol'%}">Blog</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" href="{% url 'bol'%}">Aboutus</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link active dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown"
+              aria-expanded="false">
+              Dropdown
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <li><a class="dropdown-item" href="#">Action</a></li>
+              <li><a class="dropdown-item" href="#">Another action</a></li>
+              <li>
+                <hr class="dropdown-divider">
+              </li>
+              <li><a class="dropdown-item" href="#">Something else here</a></li>
+            </ul>
+          </li>
+        
+        <form class="d-flex" style="margin-left: 450px;">
+          <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+          <button style="margin-left: 20px;" class="btn btn-outline-success" type="submit">Search</button>
+        </form>
+      </div>
+    </div>
+  </nav>
+
+
+
+
+
+  
+
+  {%block contant%}
+
+
+  <h1 style="padding-left: 190px;">WEL-COME IN SOLID LEARNING LLP</h1>
+  
+  {%endblock contant%}
+
+  <br>
+  <br>
+  <br>
+
+
+  <div>
+  <div id="link" class="container-fluid py-5 jignesh" style="flex: 100%; font-weight: 600;">
+            <div class="row">
+                <div class="col-lg-3 col-sm-2 mb-3 ">
+                   
+                    </a>
+                    <div style="margin-left: 40px;">
+                   <ul>
+                     
+                     <a style=" text-decoration: none;" href="index.html">
+                      <img style="margin-left: 30px;" height="80px" width="80px" src="{% static 'cor/img/logo.png'%}"
+                              alt="error"> <br>
+                              <p style="color:white; font-weight: 800; font-size: 20px;"> Solid Learning </p>
+                            </ul>
+                            <div style="margin-left: 15px;">
+                           <a href=""><img width="35px" height="37px" src="{% static 'cor/img/instalogo.png'%}" alt=""></a>
+                           <a href=""><img width="35px" height="40px" src="{% static 'cor/img/linkedin-logo.png'%}" alt=""></a>
+                           <a href=""><img width="35px" height="35px" src="{% static 'cor/img/fav.png'%}" alt=""></a>
+                           <a href=""><img width="35px" height="35px" src="{% static 'cor/img/youtubelogo.png'%}" alt=""></a>
+                           <a href=""><img width="35px" height="35px" src="{% static 'cor/img/112.png'%}" alt=""></a>
+                           <!-- <a href=""><img width="40px" height="40px" src="{% static 'cor/img/2.png'%}" alt=""></a> -->
+                            </div>
+                          </div>
+             
+                </div>
+                <div class="col-6 col-lg-2 offset-lg-1 mb-3">
+                    <h5 style="color: red;">Links</h5>
+                    <ul class="list-unstyled">
+                        <li class="mb-2"><a style="color: white;" href="/">Home</a></li>
+                        <!-- <li class="mb-2"><a style="color: black;" href="/docs/5.0/">Docs</a></li> -->
+                        <li class="mb-2"><a style="color:white;" href="/docs/5.0/examples/">Courses</a></li>
+                        <li class="mb-2"><a style="color: white;" href="https://opencollective.com/bootstrap">Blog</a>
+                        </li>
+                        <li class="mb-2"><a style="color:white;" href="https://blog.getbootstrap.com/">Contact us</a></li>
+                    </ul>
+                </div>
+                <div class="col-6 col-lg-2 mb-3">
+                    <h5 style="color: red;">Guides</h5>
+                    <ul class="list-unstyled">
+                        <li class="mb-2"><a style="color: white;" href="/docs/5.0/getting-started/">Getting started</a>
+                        </li>
+                        <li class="mb-2"><a style="color: white;" href="/docs/5.0/examples/starter-template/">Starter
+                                template</a>
+                        </li>
+                        <li class="mb-2"><a style="color: white;" href="/docs/5.0/getting-started/webpack/">Webpack</a>
+                        </li>
+                        <li class="mb-2"><a style="color: white;" href="/docs/5.0/getting-started/parcel/">Common Questions</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-6 col-lg-2 mb-3">
+                    <h5 style="color: red;">Projects </h5>
+                    <ul class="list-unstyled">
+                        <li class="mb-2"><a style="color: white;" href="https://github.com/twbs/bootstrap">Web-development 
+                        </a>
+                        </li>
+                        <li class="mb-2"><a style="color: white;"
+                                href="https://github.com/twbs/bootstrap/tree/v4-dev">Python</a>
+                        </li>
+                        <li class="mb-2"><a style="color: white;" href="https://github.com/twbs/icons">Ms-Excel</a></li>
+                        <!-- <li class="mb-2"><a style="color: black;" href="https://github.com/twbs/rfs">RFS</a></li> -->
+                        <li class="mb-2"><a style="color: white;"
+                                href="https://github.com/twbs/bootstrap-npm-starter">Digital-Marketing</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-6 col-lg-2 mb-3">
+                    <h5 style="color: red;">Community</h5>
+                    <ul class="list-unstyled">
+                        <li class="mb-2"><a style="color: white;"
+                                href="https://github.com/twbs/bootstrap/issues">Issues</a>
+                        </li>
+                        <li class="mb-2"><a style="color:white;"
+                                href="https://github.com/twbs/bootstrap/discussions">Discussions</a>
+                        </li>
+                        <li class="mb-2"><a style="color: white;" href="https://github.com/sponsors/twbs">Corporate
+                                sponsors</a></li>
+                        <li class="mb-2"><a style="color:white;" href="https://opencollective.com/bootstrap">Open
+                                Collective</a></li>
+                        <!-- <li class="mb-2"><a style="color: black;"
+                                href="https://bootstrap-slack.herokuapp.com/">Slack</a>
+                        </li> -->
+                        <!-- <li class="mb-2"><a style="color: black;"
+                                href="https://stackoverflow.com/questions/tagged/bootstrap-5">Stack
+                                Overflow</a></li> -->
+                    </ul>
+                    <div></div>
+                </div>
+            </div>
+        </div>
+</div>
+  
+
+
+
+
+  <script src="{%static 'cor/js/poper.js'%}"></script>
+  <script src="{%static 'cor/js/bootstrap.js'%}"></script>
+  <script src="{%static 'cor/js/jQuery.js'%}"></script>
+  <script src="{%static 'cor/js/all.min.js'%}"></script>
+</body>
+
+</html>

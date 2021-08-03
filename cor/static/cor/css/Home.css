@@ -1,0 +1,17 @@
+
+.navbar{
+    background-color: rgba(26, 12, 102, 0.870);
+    position: fixed;
+    top: 0;
+    width: 100%;
+    overflow: hidden;
+    height: 75px;
+    font-weight: 600;
+
+}
+
+
+
+.jignesh{
+    background-color: rgba(26, 12, 102, 0.870) ;
+}

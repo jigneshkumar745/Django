@@ -1,0 +1,106 @@
+{% extends 'cor/base.html' %}
+{% load static %}
+{% block home%}
+<link rel="stylesheet" href="{% static 'dor/css/Contactus.css'%}">
+
+<style>
+body{
+            background-color: rgba(5, 167, 231,0.799);
+        }
+
+</style>
+{% endblock home%}
+
+
+
+{%block contant%}
+
+
+<h2 class="m-4" style="padding-top: 70px; font-weight: 700;">Contact with us</h2>
+<p class="m-4" style="font-weight: 500;">If you get any issues regarding your courses or have any doubts, you can contact us <br> by giving your details so that we can interact with you.</p>
+
+
+
+<div class="container">
+    <div class="row">
+        <div class="col-md-8 bg-light  p-5 raw">
+          <form class="row g-3" action="/Contact" method="POST">
+                   {% csrf_token %}
+              <div class="col-md-6">
+                <label for="inputEmail4" class="form-label">Your Email</label>
+                <input type="email" name="mail" class="form-control" placeholder="Enter Your Email" id="inputEmail4" required>
+              </div>
+              <div class="col-6">
+                <label for="inputtext4" class="form-label">Name</label>
+                <input type="text" name="Name" class="form-control" placeholder="Enter Your Name" id="Name" required>
+              </div>
+              <div class="col-md-12">
+                <label for="inputTEXT4" class="form-label">ISSUE</label>
+                <input type="text" name="Issue" class="form-control" placeholder="Enter Your Issue" id="inputtext4" required>
+              </div>
+              
+              
+              
+         
+              
+              <div class="col-12">
+                Your Whatsapp No.
+                <input type="number" name="Whatsapp" class="form-control" id="inputnumber4" placeholder="Enter your number">
+              </div>
+              <div class="col-12">
+                Your Contact No.
+                <input type="input" name="Cont" class="form-control" id="inputAddress2" placeholder="Your Contact Number">
+              </div>
+             
+              
+              <div class="form-group col-md-4">
+                <label for="inputState">State</label>
+                <select id="inputState" name="State" class="form-control">
+                  <option selected>Choose...
+                 <option value="raj">Rajasthan</option>
+                    <option value="Del">Delhi</option>
+                    <option value="Mumbai">Mumbai</option>
+                    <option value="Guj">Gujrat</option>
+                    <option value="Guj">J & k</option>
+                     <option>...</option>
+                 </select>
+                  </option>
+                 </select>
+
+                 <br>
+              <div class="col-12">
+                <div class="form-check">
+                  <input class="form-check-input" type="checkbox" id="gridCheck">
+                  <label class="form-check-label" for="gridCheck">
+                    Check me out
+                  </label>
+                </div>
+              </div>
+
+             
+
+              <div class="col-12">
+                <button type="submit" class="btn btn-primary">Submit</button>
+              </div>
+            </form>
+        </div>
+
+    </div>
+    <div class="col-md-4 bg-primary text-light raw">
+        <h3 class="m-3">Reach Us</h3>
+        <p class="mt-5 pt-3 m-5">
+            Email:- jignesh123@gmil.com
+        </p>
+        <p class=" m-5">
+            Our Contact:- +91 **********
+        </p>
+        <p class="m-5">
+            Address:- hanuman circle ,345001, jaisalmer <br> apartment no.123, near hotel rajwadi <br> jodhpur road 
+        </p>
+    </div>
+</div>
+</div>
+
+        <br>
+
+{%endblock contant%}
